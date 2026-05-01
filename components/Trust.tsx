@@ -1,8 +1,9 @@
 const items = [
-  { k: "Est. 2019", v: "Serving NYC and beyond since 2019" },
-  { k: "NYC +", v: "5 boroughs + Long Island, Yonkers & Westchester" },
-  { k: "Insured", v: "Bonded & fully insured · NYC compliant" },
-  { k: "Sliding scale", v: "Donor-funded help via DIWC, Inc." },
+  { k: "Est. 2019", v: "Six years serving NYC's overlooked homes." },
+  { k: "Where we work", v: "5 boroughs + Long Island, Yonkers & Westchester." },
+  // TODO: Confirm carrier name and coverage amount before launch
+  { k: "Insured & bonded", v: "$2M general liability · Bonded through [carrier]." },
+  { k: "Vetted team", v: "Every team member is background-checked and trained in trauma-informed care." },
 ];
 
 export default function Trust() {
@@ -49,6 +50,25 @@ export default function Trust() {
             </div>
           </div>
         ))}
+      </div>
+      <div
+        style={{
+          maxWidth: 1280,
+          margin: "0 auto",
+          padding: "0 64px",
+        }}
+      >
+        <p
+          style={{
+            fontSize: 13,
+            color: "var(--ink-soft)",
+            textAlign: "center",
+            marginTop: 24,
+            fontStyle: "italic",
+          }}
+        >
+          Cancellation: no fee with 24 hours notice. Same-day cancellations may incur a 50% charge.
+        </p>
       </div>
     </section>
   );

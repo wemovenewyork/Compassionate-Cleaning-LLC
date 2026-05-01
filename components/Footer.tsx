@@ -29,7 +29,6 @@ const cols = [
       { label: "Inquire", href: "/inquire" },
       { label: "Policy", href: "/policy" },
       { label: "Gallery", href: "/gallery" },
-      { label: "(917) 832-2500", href: "tel:9178322500" },
     ],
   },
 ];
@@ -92,6 +91,32 @@ export default function Footer({ onInquire }: FooterProps) {
                   {x.label}
                 </a>
               ))}
+              {c.h === "Contact" && (
+                <>
+                  <a
+                    href="tel:9178322500"
+                    style={{
+                      display: "block",
+                      padding: "7px 0",
+                      fontSize: 14,
+                      color: "rgba(245,240,230,0.85)",
+                    }}
+                  >
+                    Call (917) 832-2500
+                  </a>
+                  <a
+                    href="sms:9178322500"
+                    style={{
+                      display: "block",
+                      padding: "7px 0",
+                      fontSize: 14,
+                      color: "rgba(245,240,230,0.85)",
+                    }}
+                  >
+                    Text us
+                  </a>
+                </>
+              )}
             </div>
           ))}
         </div>

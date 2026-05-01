@@ -1,5 +1,13 @@
 "use client";
 
+// TODO: Split into server wrapper + client component for proper metadata export
+// export const metadata = {
+//   title: "Services · Compassionate Cleaning NYC",
+//   description: "Custom-quoted home cleaning, hoarded home clear-outs, and virtual coaching. Serving the 5 boroughs, Long Island, Yonkers, and Westchester.",
+//   openGraph: { title: "Services · Compassionate Cleaning NYC", description: "Custom-quoted home cleaning, hoarded home clear-outs, and virtual coaching.", images: [{ url: "/og-image.jpg" }] },
+// };
+// TODO: Add Service schema via server wrapper
+
 import { useState } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";

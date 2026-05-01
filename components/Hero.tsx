@@ -60,7 +60,10 @@ export default function Hero({ onInquire }: HeroProps) {
             Start the Conversation <span>→</span>
           </button>
           <a href="tel:9178322500" className="ulink" style={{ fontSize: 14 }}>
-            Call us · (917) 832-2500
+            Call (917) 832-2500
+          </a>
+          <a href="sms:9178322500" className="ulink" style={{ fontSize: 14 }}>
+            · Text us
           </a>
         </div>
       </div>

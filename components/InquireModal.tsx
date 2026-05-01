@@ -187,8 +187,15 @@ export default function InquireModal({ onClose }: InquireModalProps) {
                   }}
                 >
                   Your inquiry is read by a small team. We never share details and we&apos;ll
-                  never surprise you with a visit. You can also text or email photos to us
-                  directly at (917) 832-2500.
+                  never surprise you with a visit. You can also{" "}
+                  <a href="tel:9178322500" style={{ color: "var(--sage-deep)", borderBottom: "1px solid currentColor" }}>
+                    call (917) 832-2500
+                  </a>{" "}
+                  or{" "}
+                  <a href="sms:9178322500" style={{ color: "var(--sage-deep)", borderBottom: "1px solid currentColor" }}>
+                    text us
+                  </a>{" "}
+                  to send photos directly.
                 </p>
               </div>
             )}
