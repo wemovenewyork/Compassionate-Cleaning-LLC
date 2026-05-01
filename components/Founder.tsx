@@ -34,9 +34,9 @@ export default function Founder() {
             letterSpacing: "-0.005em",
           }}
         >
-          &ldquo;We aim to raise the living standards for people in our community who need it
-          by providing mental-health-informed cleaning. Everyone should live in a space that
-          represents them —{" "}
+          &ldquo;We aim to raise the living standards for people in our community who need it.
+          Cleaning services should be accessible to all — especially those reaching out for help.
+          Everyone deserves to live in a space that represents them,{" "}
           <em style={{ fontStyle: "normal", color: "var(--sage-deep)" }}>
             not the stigma
           </em>{" "}
@@ -55,8 +55,22 @@ export default function Founder() {
           <div style={{ width: 32, height: 1, background: "var(--ink-soft)" }} />
           <span>Founder, Compassionate Cleaning, LLC</span>
         </div>
+        <p
+          style={{
+            marginTop: 22,
+            fontSize: 15,
+            lineHeight: 1.65,
+            color: "var(--ink-soft)",
+            maxWidth: 480,
+          }}
+        >
+          The business began at Queens College — when our founder helped a neighbor prepare
+          for an ACS visit and saw firsthand how judgment, embarrassment, and financial
+          barriers kept people from getting the cleaning support they needed. That moment
+          became Compassionate Cleaning.
+        </p>
         <div style={{ marginTop: 36 }}>
-          <a href="#" className="btn-ghost">
+          <a href="/about" className="btn-ghost">
             Read our story
           </a>
         </div>

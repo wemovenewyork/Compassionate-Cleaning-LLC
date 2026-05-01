@@ -7,7 +7,7 @@ interface FooterProps {
 const cols = [
   { h: "Services", l: ["Home Cleaning", "Hoarded Clear-outs", "Virtual Coaching", "Kitchen Makeovers"] },
   { h: "Company", l: ["About", "Founder Story", "DIWC Inc.", "Donate"] },
-  { h: "Visit", l: ["Inquire", "Policy", "Gallery", "hello@diwc.nyc"] },
+  { h: "Contact", l: ["Inquire", "Policy", "Gallery", "917.832.2500"] },
 ];
 
 export default function Footer({ onInquire }: FooterProps) {
@@ -45,8 +45,11 @@ export default function Footer({ onInquire }: FooterProps) {
               }}
             >
               Reach out whenever — no pressure to schedule. We answer every inquiry
-              personally, usually within a day.
+              personally, usually within one business day.
             </p>
+            <div style={{ marginTop: 18, fontSize: 13, color: "rgba(245,240,230,0.55)" }}>
+              Mon–Fri 9am–5pm · Sat–Sun closed
+            </div>
             <button
               className="btn-primary"
               onClick={onInquire}
@@ -63,7 +66,7 @@ export default function Footer({ onInquire }: FooterProps) {
               {c.l.map((x) => (
                 <a
                   key={x}
-                  href="#"
+                  href={x === "917.832.2500" ? "tel:9178322500" : "#"}
                   style={{
                     display: "block",
                     padding: "7px 0",

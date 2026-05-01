@@ -2,7 +2,7 @@ import Placeholder from "./Placeholder";
 
 export default function Services() {
   return (
-    <section id="coaching" style={{ padding: "96px 0", background: "var(--cream-deep)" }}>
+    <section id="services" style={{ padding: "96px 0", background: "var(--cream-deep)" }}>
       <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 64px" }}>
         <div
           style={{
@@ -31,7 +31,7 @@ export default function Services() {
               <em>Quiet</em> work, custom-quoted.
             </h2>
           </div>
-          <a href="#" className="ulink" style={{ fontSize: 14 }}>
+          <a href="/services" className="ulink" style={{ fontSize: 14 }}>
             See all services →
           </a>
         </div>
@@ -80,27 +80,8 @@ export default function Services() {
                 never by the bag.
               </p>
             </div>
-            <div>
-              <div
-                style={{
-                  fontSize: 12,
-                  opacity: 0.7,
-                  marginBottom: 6,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                }}
-              >
-                Starting at
-              </div>
-              <div
-                style={{
-                  fontFamily: "var(--font-cormorant), 'Cormorant Garamond', Georgia, serif",
-                  fontSize: 44,
-                  fontStyle: "italic",
-                }}
-              >
-                $2,500
-              </div>
+            <div className="eyebrow" style={{ color: "var(--cream)", opacity: 0.85 }}>
+              Custom quoted · Send photos to start →
             </div>
           </div>
           <div
@@ -139,8 +120,8 @@ export default function Services() {
                   lineHeight: 1.65,
                 }}
               >
-                Surface, deep, or a thoughtful mix. Custom-quoted to your home and rhythm.
-                Recurring or one-time.
+                Surface, deep, or a thoughtful mix. Custom-quoted based on the scope of
+                your space. Recurring or one-time. Photos required for an accurate quote.
               </p>
             </div>
             <div className="eyebrow" style={{ color: "var(--tan-deep)" }}>
@@ -161,7 +142,7 @@ export default function Services() {
           >
             <div>
               <Placeholder
-                label="video call · 4:3"
+                label="virtual coaching · 4:3"
                 variant="tan"
                 style={{ height: 160, marginBottom: 28 }}
               />
@@ -184,11 +165,12 @@ export default function Services() {
                 }}
               >
                 One hour over Zoom or FaceTime. Walk through a room together — we&apos;ll
-                guide the next step at your pace.
+                guide the next step at your pace. Great if in-person isn&apos;t in the
+                budget right now.
               </p>
             </div>
             <div className="eyebrow" style={{ color: "var(--tan-deep)" }}>
-              $30 / hour →
+              Inquire to book →
             </div>
           </div>
         </div>
@@ -221,7 +203,7 @@ export default function Services() {
             </em>
             — paused for now, returning soon.
           </span>
-          <a href="#" className="ulink" style={{ color: "var(--sage-deep)", fontWeight: 500 }}>
+          <a href="/inquire" className="ulink" style={{ color: "var(--sage-deep)", fontWeight: 500 }}>
             Get on the waitlist →
           </a>
         </div>

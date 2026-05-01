@@ -1,8 +1,8 @@
 const items = [
-  { k: "7 yrs", v: "Caring for NYC homes since 2019" },
-  { k: "5 boroughs", v: "Manhattan · Brooklyn · Queens · Bronx · SI" },
+  { k: "Est. 2019", v: "Serving NYC and beyond since 2019" },
+  { k: "6 areas", v: "5 boroughs · Long Island · Yonkers · Westchester" },
   { k: "Insured", v: "Bonded & fully insured · NYC compliant" },
-  { k: "Sliding scale", v: "Donor-funded help for those who need it" },
+  { k: "Sliding scale", v: "Donor-funded help via DIWC, Inc." },
 ];
 
 export default function Trust() {

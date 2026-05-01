@@ -7,9 +7,9 @@ interface InquireModalProps {
 }
 
 const opts = [
-  { k: "home", t: "Home Cleaning", d: "Surface, deep, or recurring" },
-  { k: "hoard", t: "Clear-out", d: "From $2,500 · custom plan" },
-  { k: "coach", t: "Virtual Coaching", d: "$30/hr · Zoom or FaceTime" },
+  { k: "home", t: "Home Cleaning", d: "Surface, deep, or recurring · custom quoted" },
+  { k: "hoard", t: "Hoarded Clear-out", d: "Trauma-informed · custom quoted" },
+  { k: "coach", t: "Virtual Coaching", d: "Zoom or FaceTime · inquire for rate" },
   { k: "unsure", t: "Not sure yet", d: "We'll help you figure it out" },
 ];
 
@@ -82,7 +82,7 @@ export default function InquireModal({ onClose }: InquireModalProps) {
               }}
             >
               We received your note. A real person — usually our founder — will write back
-              within one business day.
+              within one business day. Mon–Fri 9am–5pm.
             </p>
             <button className="btn-ghost" onClick={onClose}>
               Close
@@ -105,7 +105,7 @@ export default function InquireModal({ onClose }: InquireModalProps) {
             >
               {step === 1 && "A few details, gently."}
               {step === 2 && "What feels right?"}
-              {step === 3 && "Anything else helpful?"}
+              {step === 3 && "Photos & anything else."}
             </h3>
             {step === 1 && (
               <div style={{ display: "grid", gap: 18 }}>
@@ -127,7 +127,7 @@ export default function InquireModal({ onClose }: InquireModalProps) {
                   />
                 </div>
                 <div>
-                  <label>NYC ZIP</label>
+                  <label>ZIP code</label>
                   <input
                     value={zip}
                     onChange={(e) => setZip(e.target.value)}
@@ -159,24 +159,36 @@ export default function InquireModal({ onClose }: InquireModalProps) {
               </div>
             )}
             {step === 3 && (
-              <div>
-                <label>Tell us as much or as little as you&apos;d like.</label>
-                <textarea
-                  value={note}
-                  onChange={(e) => setNote(e.target.value)}
-                  rows={6}
-                  placeholder="What's going on, what's been hard, what would help — share whatever feels right."
-                />
+              <div style={{ display: "grid", gap: 18 }}>
+                <div>
+                  <label>
+                    Photos of the space{" "}
+                    <span style={{ color: "var(--tan-deep)", fontWeight: 600 }}>
+                      (required for an accurate quote)
+                    </span>
+                  </label>
+                  <input type="file" accept="image/*" multiple />
+                </div>
+                <div>
+                  <label>Tell us as much or as little as you&apos;d like.</label>
+                  <textarea
+                    value={note}
+                    onChange={(e) => setNote(e.target.value)}
+                    rows={5}
+                    placeholder="What's going on, what's been hard, what would help — share whatever feels right."
+                  />
+                </div>
                 <p
                   style={{
                     fontSize: 12,
                     color: "var(--ink-soft)",
-                    marginTop: 12,
+                    margin: 0,
                     lineHeight: 1.5,
                   }}
                 >
                   Your inquiry is read by a small team. We never share details and we&apos;ll
-                  never surprise you with a visit.
+                  never surprise you with a visit. You can also text or email photos to us
+                  directly at 917.832.2500.
                 </p>
               </div>
             )}
