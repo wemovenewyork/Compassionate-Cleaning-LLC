@@ -7,7 +7,15 @@ interface NavProps {
   onInquire: () => void;
 }
 
-const items = ["Home", "Services", "Gallery", "Inquire", "Policy", "Donate", "DIWC Inc."];
+const items = [
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/services" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Inquire", href: "/inquire" },
+  { label: "Policy", href: "/policy" },
+  { label: "Donate", href: "/donate" },
+  { label: "DIWC Inc.", href: "/diwc-inc" },
+];
 
 export default function Nav({ onInquire }: NavProps) {
   const [scrolled, setScrolled] = useState(false);
@@ -43,23 +51,17 @@ export default function Nav({ onInquire }: NavProps) {
             justifyContent: "space-between",
           }}
         >
-          <a href="#">
+          <a href="/">
             <Logo />
           </a>
           <div
             className="nav-links-wrap"
             style={{ display: "flex", gap: 30, fontSize: 13, color: "var(--ink-soft)" }}
           >
-            {items.map((x, i) => (
+            {items.map((item, i) => (
               <a
-                key={x}
-                href={x === "Inquire" ? "#inquire" : "#"}
-                onClick={(e) => {
-                  if (x === "Inquire") {
-                    e.preventDefault();
-                    onInquire();
-                  }
-                }}
+                key={item.label}
+                href={item.href}
                 style={{
                   fontWeight: i === 0 ? 600 : 400,
                   color: i === 0 ? "var(--ink)" : "var(--ink-soft)",
@@ -73,7 +75,7 @@ export default function Nav({ onInquire }: NavProps) {
                     i === 0 ? "var(--ink)" : "var(--ink-soft)")
                 }
               >
-                {x}
+                {item.label}
               </a>
             ))}
           </div>
@@ -134,10 +136,10 @@ export default function Nav({ onInquire }: NavProps) {
               ×
             </button>
           </div>
-          {items.map((x) => (
+          {items.map((item) => (
             <a
-              key={x}
-              href="#"
+              key={item.label}
+              href={item.href}
               onClick={() => setMm(false)}
               style={{
                 display: "block",
@@ -148,7 +150,7 @@ export default function Nav({ onInquire }: NavProps) {
                 fontStyle: "italic",
               }}
             >
-              {x}
+              {item.label}
             </a>
           ))}
         </div>
