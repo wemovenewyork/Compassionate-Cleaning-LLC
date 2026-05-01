@@ -1,6 +1,6 @@
 const items = [
   { k: "Est. 2019", v: "Serving NYC and beyond since 2019" },
-  { k: "6 areas", v: "5 boroughs · Long Island · Yonkers · Westchester" },
+  { k: "NYC +", v: "5 boroughs + Long Island, Yonkers & Westchester" },
   { k: "Insured", v: "Bonded & fully insured · NYC compliant" },
   { k: "Sliding scale", v: "Donor-funded help via DIWC, Inc." },
 ];

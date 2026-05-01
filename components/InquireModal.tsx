@@ -188,7 +188,7 @@ export default function InquireModal({ onClose }: InquireModalProps) {
                 >
                   Your inquiry is read by a small team. We never share details and we&apos;ll
                   never surprise you with a visit. You can also text or email photos to us
-                  directly at 917.832.2500.
+                  directly at (917) 832-2500.
                 </p>
               </div>
             )}

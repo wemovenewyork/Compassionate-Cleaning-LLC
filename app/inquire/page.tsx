@@ -129,7 +129,7 @@ export default function InquirePage() {
                 href="tel:9178322500"
                 style={{ fontSize: 22, fontWeight: 600, color: "var(--ink)" }}
               >
-                917.832.2500
+                (917) 832-2500
               </a>
               <div
                 style={{
@@ -179,7 +179,7 @@ export default function InquirePage() {
             >
               Photos are mandatory for an accurate quote. You can attach them below or send them via text to{" "}
               <a href="tel:9178322500" style={{ color: "var(--sage-deep)", borderBottom: "1px solid currentColor" }}>
-                917.832.2500
+                (917) 832-2500
               </a>
             </div>
           </div>

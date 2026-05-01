@@ -7,6 +7,7 @@ import WhoWeHelp from "@/components/WhoWeHelp";
 import Services from "@/components/Services";
 import Founder from "@/components/Founder";
 import Faq from "@/components/Faq";
+import Testimonial from "@/components/Testimonial";
 import Trust from "@/components/Trust";
 import Footer from "@/components/Footer";
 import InquireModal from "@/components/InquireModal";
@@ -20,6 +21,7 @@ export default function Home() {
       <WhoWeHelp />
       <Services />
       <Founder />
+      <Testimonial />
       <Faq />
       <Trust />
       <Footer onInquire={() => setOpen(true)} />
