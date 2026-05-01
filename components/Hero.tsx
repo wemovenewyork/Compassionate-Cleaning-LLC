@@ -1,5 +1,3 @@
-import Placeholder from "./Placeholder";
-
 interface HeroProps {
   onInquire: () => void;
 }
@@ -67,9 +65,19 @@ export default function Hero({ onInquire }: HeroProps) {
         </div>
       </div>
       <div style={{ position: "relative", aspectRatio: "4 / 5" }}>
-        <Placeholder
-          label="home interior · soft window light · 4:5"
-          style={{ position: "absolute", inset: 0, borderRadius: 4 }}
+        <iframe
+          src="https://www.instagram.com/reel/DPLC6i3DEX7/embed/"
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            border: "none",
+            borderRadius: 4,
+          }}
+          allowFullScreen
+          scrolling="no"
+          loading="lazy"
         />
         <div
           style={{
